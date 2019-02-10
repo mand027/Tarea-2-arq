@@ -1,0 +1,50 @@
+$mdc-theme-primary: #e6933e;
+$mdc-theme-secondary: #cb0b7a;
+$mdc-theme-on-primary: #ffffff;
+$mdc-theme-on-secondary: #442b2d;
+
+@import "common";
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+
+.header {
+  text-align: center;
+}
+
+.shrine-logo {
+  width: 150px;
+  height: 150px;
+  padding-top: 80px;
+  fill: #e6933e;
+}
+
+.title-logo{
+  color: black;
+}
+
+.shrine-login {
+  background-color: lightgray;
+  color: $mdc-theme-on-background;
+}
+
+.cancel {
+  @include mdc-button-ink-color(on-surface);
+}
+
+.username,
+.password {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  margin: auto;
+}
+
+.button-container button {
+  margin: 3px;
+}
